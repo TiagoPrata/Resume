@@ -58,11 +58,8 @@
 %! Important
 % Address and Phone Number are been stored in the sensitivedata.tex file
 % This file is not pushed to GitHub, so if needed, create a new file with the same name
-% and add the \address and \mobile commands on it
-\input{sensitivedata.tex}
-% \address{Avenida Paulista, 500 - Sao Paulo - Brazil}
-% \mobile{(+55) xx xxx xxx xxx}
-\email{tiagoprata@ymail.com}
+% and add the \address , \mobile and \email commands on it
+\IfFileExists{sensitivedata.tex}{\input{sensitivedata.tex}}{\input{sensitivedata_fake.tex}}
 % \homepage{www.posquit0.com}
 \github{TiagoPrata}
 \linkedin{tiago-prata}
